@@ -5,6 +5,7 @@ import org.json.JSONObject;
 public class JsonPlaceData {
     public static int basariliSC=200;
     public static String contentType="application/json; charset=utf-8";
+    public static String header="keep-alive";
 
 
     public static JSONObject expBodyolustur() {
@@ -18,5 +19,18 @@ public class JsonPlaceData {
                 "                 um mollitia molestiae aut atque rem suscipit\\nnam impedit esse");
 
         return expBody;
+    }
+    public static JSONObject jsonDataOlustur(String title,String body,int userId,int id){
+
+
+    JSONObject jsonData=new JSONObject();
+        jsonData.put("title",title);
+        jsonData.put("body",body);
+        jsonData.put("userId",userId);
+        jsonData.put("id",id);
+
+        return jsonData;
+
+
     }
 }
