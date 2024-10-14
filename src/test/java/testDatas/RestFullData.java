@@ -45,7 +45,7 @@ public class RestFullData {
         Map<String, Object> bookingMAP = new HashMap<>();
         bookingMAP.put("firstname", "Ahmet");
         bookingMAP.put("lastname", "Bulut");
-        bookingMAP.put("totalprice", 500);
+        bookingMAP.put("totalprice", 500.0);
         bookingMAP.put("depositpaid", false);
         bookingMAP.put("bookingdates", innerMap);
         bookingMAP.put("additionalneeds", "wi-fi");
