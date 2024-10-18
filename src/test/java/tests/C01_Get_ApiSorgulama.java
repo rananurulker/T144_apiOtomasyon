@@ -32,6 +32,13 @@ ve response suresinin 5 sn’den kisa oldugunu manuel olarak test ediniz
          Response response=given().when().get(url);
          response.prettyPrint();
 
+         System.out.println("Status code : " + response.getStatusCode());
+         System.out.println("Content type : " + response.getContentType());
+         System.out.println("Server Header Degeri : " + response.getHeader("Server"));
+         System.out.println("Status Line : " + response.getStatusLine());
+         System.out.println("Response suresi : " + response.getTime());
+
+
          //4-Expected Data ile Actual Datayi karsilastir Assertion yap
 
 
