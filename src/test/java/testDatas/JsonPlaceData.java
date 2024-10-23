@@ -15,14 +15,13 @@ public class JsonPlaceData {
     public static JSONObject expBodyolustur() {
 
 
-        JSONObject expBody=new JSONObject();
-        expBody.put("userId",3);
-        expBody.put("id",22);
-        expBody.put("title","dolor sint quo a velit explicabo quia nam");
-        expBody.put("body","eos qui et ipsum ipsam suscipit aut\\nsed omnis non odio\\nexpedita ear\n" +
-                "                 um mollitia molestiae aut atque rem suscipit\\nnam impedit esse");
+        JSONObject expData=new JSONObject();
 
-        return expBody;
+        expData.put("userId", 3);
+        expData.put("id", 22);
+        expData.put("title", "dolor sint quo a velit explicabo quia nam");
+        expData.put("body", "eos qui et ipsum ipsam suscipit aut\\nsed omnis non odio\\nexpedita earum mollitia molestiae aut atque rem suscipit\\nnam impedit esse");
+        return expData;
     }
     public static JSONObject jsonDataOlustur(String title,String body,int userId,int id){
 
