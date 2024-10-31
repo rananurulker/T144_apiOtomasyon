@@ -43,7 +43,10 @@ um mollitia molestiae aut atque rem suscipit\nnam impedit esse"
         //assertion
         JsonPath respJP=response.jsonPath();
 
+        Assert.assertEquals(JsonPlaceData.basariliSC,response.getStatusCode());
+
         Assert.assertEquals(expData.get("userId"),respJP.get("userId"));
+
         Assert.assertEquals(expData.get("id"),respJP.get("id"));
         Assert.assertEquals(expData.get("title"),respJP.get("title"));
         Assert.assertEquals(expData.get("body"),respJP.get("body"));
